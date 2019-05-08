@@ -1,0 +1,58 @@
+.to-do-list{
+  position: absolute;
+  left: 40%;
+  top: 200px;
+  width: 220px;
+  padding: 15px;
+  box-shadow: 1px 1px 10px;
+}
+.input-task{
+  width: 210px;
+  font-size: 21px;
+  border: none;
+  border-bottom: 2px solid rgb(196, 196, 196);
+  outline: none;
+}
+.tasks{
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+.active-task,.complite-task{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid rgb(196, 196, 196);
+  margin: 10px 0 0 0;
+}
+.task-txt{
+  width: 190px;
+  font-size: 21px;
+  text-align: center;
+}
+.complite-task-button,.delete-task-button{
+  border-radius: 50%;
+  outline: none;
+  width: 26px;
+  background: none;
+  font-weight: bolder;
+}
+.complite-task-button{
+  color: rgb(4, 177, 70);
+  border: 2px solid rgb(4, 177, 70);
+}
+.delete-task-button{
+  color: rgb(177, 0, 70);
+  border: 2px solid rgb(177, 0, 70);
+}
+.complite-task-button,.delete-task-button,.task-txt{
+  margin: 0 0 5px 0;
+  
+}
+.complite-task .task-txt{
+  text-decoration: line-through;
+  color: rgb(4, 177, 70);
+}
+.complite-task{
+  border-bottom: 2px solid rgb(4, 177, 70);
+}
